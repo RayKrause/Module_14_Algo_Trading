@@ -165,5 +165,5 @@ But this model is not good as it lags in actual returns to such an extent that I
 
 ### Conclusion
 The updated model appears to work well and should be fitted to other assets to see what sort of performance gains could be attained.
-It appears that Support Vector Machine learning is suitable for putting together a trading strategy.
+It appears that Support Vector Machine learning is suitable for building a algorithmic trading bot to assist in a trading strategy.
 It would be beneficial to look at the returns of the model over an extended time period to determine how well it performs. 
