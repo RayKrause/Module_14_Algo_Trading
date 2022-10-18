@@ -109,9 +109,7 @@ In part one of our machine learning trading bot we establish the Baseline Perfor
 In this section, we run the provided starter code to establish a baseline performance for the trading algorithm. Coding was provided in the starter code for steps 1 through 3. 
 
 Step 1: Import the OHLCV dataset into a Pandas DataFrame. 
-
 Step 2: Generate trading signals using short- and long-window SMA values. 
-
 Step 3: Split the data into training and testing datasets. 
 
 ![Decorative image.](Images/image1.png)
@@ -136,9 +134,14 @@ Step 7 we create a cumulative return plot that shows the actual returns vs. the 
 
 ![Decorative image.](Images/plot1.png) 
 
-In an attempt to fine tune the model in order to obtain an increase in performance. I ajusted the time period from three months to six. This was coupled with adjusting the moving averages used as trading signals. When using a shorter SMA horizon of 14 days for our "Fast" SMA and 30 days as our "Slow" SMA. These changes together produced a classification report which was worse than the original classification report with a 20 points drop on weighted average and much worse recall and precision rate. Despite that the returns appeared to be much better and outperformed the previous model on nearly all of the times frames, I think that changing the moving averages had a greater effect on the model than merely increasing the time period that we originally looked at.
+In an attempt to fine tune the model in order to obtain an increase in performance. I ajusted the time period from three months to six. 
 
-![Decorative image.](Images/plot2.png)
+![Decorative image.](Images/6month.png)
+
+This in conjuction with adjusting the moving averages used as trading signals. When using a shorter SMA horizon of 14 days for our "Fast" SMA and 30 days as our "Slow" SMA. These changes together produced a classification report which was worse than the original classification report with a significant points drop on weighted average and much worse recall and precision rate. Despite that the returns appeared to be much better and outperformed the previous model on nearly all of the times frames, I think that changing the moving averages had a greater effect on the model than merely increasing the time period that we originally looked at.
+
+![Decorative image.](Images/6month1.png)
+![Decorative image.](Images/6month_plot.png)
 
 The next section we tune the baseline trading algorithm we’ll tune, or adjust, the model’s input features to find the parameters that result in the best trading outcomes. We’ll choose the best by comparing the cumulative products of the strategy returns. 
 
@@ -152,15 +155,15 @@ While the classification report showed a lower weighted average than the previou
 
 ![Decorative image.](Images/image.png)
 
- But this model is no good. It lags actual returns to such an extent, I am of the opinion that logistic regression is not suitable for a trading algorithms
+But this model is not good. It lags in actual returns to such an extent that I'm of the opinion that logistic regression may not be suitable for use in trading algorithms
 
- ![Decorative image.](Images/plot3.png)
+![Decorative image.](Images/plot3.png)
 
 Conclusions
 It appears that Support Vector Machine (SVM) learning is suitable for putting together a trading strategy.
 
 The updated model appears to work well and should be fitted to other assets to see what sort of performance gains could be attained.
 
-It would also be useful to look at the returns of the model over a longer time period to determine how well it does.
+It would also be useful to look at the returns of the model over a longer time period to determine how well it performs.
 
 During a 6 month timeframe the new 14 and 30 SMA SVM proved to be a good trading algorithm. 
