@@ -164,10 +164,6 @@ But this model is not good as it lags in actual returns to such an extent that I
 ![Decorative image.](Images/plot2.png)
 
 ### Conclusion
-It appears that Support Vector Machine (SVM) learning is suitable for putting together a trading strategy.
-
 The updated model appears to work well and should be fitted to other assets to see what sort of performance gains could be attained.
-
-It would also be useful to look at the returns of the model over a longer time period to determine how well it performs.
-
-During a 6 month timeframe the new 14 and 30 SMA SVM proved to be a good trading algorithm. 
+It appears that Support Vector Machine learning is suitable for putting together a trading strategy.
+It would be beneficial to look at the returns of the model over an extended time period to determine how well it performs. 
