@@ -136,118 +136,31 @@ Step 7 we create a cumulative return plot that shows the actual returns vs. the 
 
 ![Decorative image.](Images/plot1.png) 
 
-I attempted to fine tune the model in order to obtain an increase in performance. We ajusted the time period from three months to six. This was coupled with adjusting the moving averages used as trading signals. When using a shorter SMA horizon of 14 days for our "Fast" SMA and 30 days as our "Slow" SMA. These changes together produced this classification report which was worse than the original classification report with a 20 points drop on weighted average and much worse recall and precision rate. Despite this the returns were much better and outperformed. As this new model outperformed on nearly all times frames, I believe that changing the moving averages had a greater effect than increasing the time period that we looked at originally
+In an attempt to fine tune the model in order to obtain an increase in performance. I ajusted the time period from three months to six. This was coupled with adjusting the moving averages used as trading signals. When using a shorter SMA horizon of 14 days for our "Fast" SMA and 30 days as our "Slow" SMA. These changes together produced a classification report which was worse than the original classification report with a 20 points drop on weighted average and much worse recall and precision rate. Despite that the returns appeared to be much better and outperformed the previous model on nearly all of the times frames, I think that changing the moving averages had a greater effect on the model than merely increasing the time period that we originally looked at.
 
 ![Decorative image.](Images/plot2.png)
 
 The next section we tune the baseline trading algorithm we’ll tune, or adjust, the model’s input features to find the parameters that result in the best trading outcomes. We’ll choose the best by comparing the cumulative products of the strategy returns. 
 
 Step 1: Tune the training algorithm by adjusting the size of the training dataset 
-
 Step 2: Tune the trading algorithm by adjusting the SMA input features. 
-
 Step 3: Choose the set of parameters that best improved the trading algorithm returns. 
 
- 
+Another model was used on the original time frame and original moving averages to see if more performance could be gained. I used Logisitic Regression to see if that created any improvements.
 
- 
+While the classification report showed a lower weighted average than the previous model with time frame changes, we have seen that better weighted average does not guarantee better trading results
 
- 
+![Decorative image.](Images/image.png)
 
- 
+ But this model is no good. It lags actual returns to such an extent, I am of the opinion that logistic regression is not suitable for a trading algorithms
 
-During our evaluation of the current model the following inputs were used. 
+ ![Decorative image.](Images/plot3.png)
 
-  
+Conclusions
+It appears that Support Vector Machine (SVM) learning is suitable for putting together a trading strategy.
 
-The first-time frame looked at was 3 months. 
+The updated model appears to work well and should be fitted to other assets to see what sort of performance gains could be attained.
 
-  
+It would also be useful to look at the returns of the model over a longer time period to determine how well it does.
 
-original time sample 
-
-  
-
-The first set of moving averages looked at where 4 days and 100 days original SMAs 
-
-  
-
-The original classification report shows that the model should be useful with a weighted average of 77 and very high recall and precision in longing and shorting respectively 
-
-  
-
-original classification report 
-
-  
-
-While the numbers seem good the performance of this strategy is not desirable as it underperforms 
-
-  
-
-original returns graph 
-
-  
-
-I set out to tune the model to find some better performance. 
-
-  
-
-One of the things I did was to increase the time horizon that was used for testing, from 3 months to 6 months. 
-
-  
-
-This was coupled with adjusting the moving averages used as trading signals. We decided on using a shorter SMA horizon with 14 days being our "Fast" SMA and 30 being our "Slow" SMA 
-
-  
-
-These changes together produced this classification report which on the surface looks worse than the original classification report with a whole 20 points lower on weighted average and much worse recall and precision. 
-
-  
-
-new classification report 
-
-  
-
-Despite this the returns were much better and outperformed. As this new model outperformed nearly all times frames, I believe that changing the moving averages had a greater effect than increasing the time period that we looked at originally 
-
-  
-
-new plotted returns 
-
-  
-
-Another model was used on the original time frame and original moving averages to see if more performance could be gained. I used Logisitic Regression to see if that created any improvements. 
-
-  
-
-While the classification report showed a lower weighted average than the previous model with time frame changes, we have seen that a better weighted average does not guarantee better trading results 
-
-  
-
-Logisitic regression classification report 
-
-  
-
-But this model is no good. It lags actual returns to such an extent; I believe logistic regression is not suitable for trading algorithms 
-
-  
-
-Logisitic regression returns plotted  
-
-  
-
-Conclusions 
-
-I would appear that Support Vector Machine (SVM) learning is suitable for putting together a trading strategy. 
-
-  
-
-The updated model appears to work well enough that it should be fitted to other assets to see what sort of performance gains could be found. 
-
-  
-
-It would also be useful to look at the returns of the model over a very long-time horizon to see how well it does. 
-
-  
-
-During a 6-month timeframe the new 14 and 30 SMA SVM is a winning trading algo. 
+During a 6 month timeframe the new 14 and 30 SMA SVM proved to be a good trading algorithm. 
