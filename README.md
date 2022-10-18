@@ -147,19 +147,21 @@ This in conjuction with adjusting the moving averages used as trading signals. W
 
 The next section we tune the baseline trading algorithm we’ll tune, or adjust, the model’s input features to find the parameters that result in the best trading outcomes. We’ll choose the best by comparing the cumulative products of the strategy returns. 
 
-Step 1: Tune the training algorithm by adjusting the size of the training dataset 
+Step 1: Tune the training algorithm by adjusting the size of the training dataset. 
+
 Step 2: Tune the trading algorithm by adjusting the SMA input features. 
+
 Step 3: Choose the set of parameters that best improved the trading algorithm returns. 
 
 Another model was used on the original time frame and original moving averages to see if more performance could be gained. I used Logisitic Regression to see if that created any improvements.
 
 While the classification report showed a lower weighted average than the previous model with time frame changes, we have seen that better weighted average does not guarantee better trading results
 
-![Decorative image.](Images/image.png)
+![Decorative image.](Images/image6.png)
 
 But this model is not good. It lags in actual returns to such an extent that I'm of the opinion that logistic regression may not be suitable for use in trading algorithms
 
-![Decorative image.](Images/plot3.png)
+![Decorative image.](Images/plot2.png)
 
 Conclusions
 It appears that Support Vector Machine (SVM) learning is suitable for putting together a trading strategy.
