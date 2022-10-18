@@ -114,7 +114,7 @@ Step 2: Generate trading signals using short- and long-window SMA values.
 
 Step 3: Split the data into training and testing datasets. 
 
-https://github.com/RayKrause/Module_14_Algo_Trading/blob/main/Images/image%201.png
+![Decorative image.](Images/image 1.png)
 <insert image 1> 
 
 The first time frame looked at was 3 months. 
