@@ -108,8 +108,10 @@ In part one of our machine learning trading bot we establish the Baseline Perfor
 
 In this section, we run the provided starter code to establish a baseline performance for the trading algorithm. Coding was provided in the starter code for steps 1 through 3. 
 
-Step 1: Import the OHLCV dataset into a Pandas DataFrame. 
+Step 1: Import the OHLCV dataset into a Pandas DataFrame.
+
 Step 2: Generate trading signals using short- and long-window SMA values. 
+
 Step 3: Split the data into training and testing datasets. 
 
 ![Decorative image.](Images/image1.png)
@@ -134,7 +136,7 @@ Step 7 we create a cumulative return plot that shows the actual returns vs. the 
 
 ![Decorative image.](Images/plot1.png) 
 
-In an attempt to fine tune the model in order to obtain an increase in performance. I ajusted the time period from three months to six. 
+In an attempt to fine tune the model in order to obtain an increase in performance. I adjusted the time period from three months to six. 
 
 ![Decorative image.](Images/6month.png)
 
