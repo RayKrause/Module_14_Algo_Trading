@@ -120,16 +120,11 @@ The initial time frame looked at a 3 month period.
 ![Decorative image.](Images/image1b.png)
 
 In step 4 we used the `SVC` classifier model from SKLearn's support vector machine (SVM) learning method to fit the training data and make predictions based on the testing data. Review the predictions. 
+![Decorative image.](Images/image2.png)
+In step 5 we review the classification report associated with the `SVC` model predictions. The original classification report shows that the model should be useful with a weighted average of 77 and very high recall and precision in longing and shorting respectively 
+![Decorative image.](Images/image3.png)
 
-The original classification report shows that the model should be useful with a weighted average of 77 and very high recall and precision in longing and shorting respectively 
-
-<insert image 2> 
-
-While the numbers seem good the performance of this strategy is not desirable as it underperforms 
-
-In step 5 we review the classification report associated with the `SVC` model predictions. 
-
-<insert image 3> 
+While the numbers seem good the performance of this strategy is not desirable as it underperforms  
 
 In step 6 we create a predictions DataFrame that contains columns for “Predicted” values, “Actual Returns”, and “Strategy Returns”. 
 
