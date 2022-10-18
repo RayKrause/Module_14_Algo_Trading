@@ -159,7 +159,7 @@ While the classification report showed a lower weighted average than the previou
 
 ![Decorative image.](Images/image6.png)
 
-But this model is not good. It lags in actual returns to such an extent that I'm of the opinion that logistic regression may not be suitable for use in trading algorithms
+But this model is not good as it lags in actual returns to such an extent that I'm of the opinion that logistic regression may not be suitable for use in trading algorithms
 
 ![Decorative image.](Images/plot2.png)
 
