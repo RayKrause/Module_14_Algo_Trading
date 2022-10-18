@@ -115,9 +115,9 @@ Step 2: Generate trading signals using short- and long-window SMA values.
 Step 3: Split the data into training and testing datasets. 
 
 ![Decorative image.](Images/image1.png)
-<insert image 1> 
 
-The first time frame looked at was 3 months. 
+The initial time frame looked at a 3 month period. 
+![Decorative image.](Images/image1b.png)
 
 In step 4 we used the `SVC` classifier model from SKLearn's support vector machine (SVM) learning method to fit the training data and make predictions based on the testing data. Review the predictions. 
 
