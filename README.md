@@ -117,12 +117,15 @@ Step 3: Split the data into training and testing datasets.
 ![Decorative image.](Images/image1.png)
 
 The initial time frame looked at a 3 month period. 
+
 ![Decorative image.](Images/image1b.png)
 
-In step 4 we used the `SVC` classifier model from SKLearn's support vector machine (SVM) learning method to fit the training data and make predictions based on the testing data. Review the predictions. 
+In step 4 we used the `SVC` classifier model from SKLearn's support vector machine (SVM) learning method to fit the training data and make predictions based on the testing data.
+
 ![Decorative image.](Images/image2.png)
 
-In step 5 we review the classification report associated with the `SVC` model predictions. The original classification report shows that the model should be useful with a weighted average of 77 and very high recall and precision in longing and shorting respectively. While the numbers seem good the performance of this strategy is not desirable as it underperforms.
+In step 5 we review the classification report associated with the `SVC` model predictions. The original classification report shows that the model should be useful with a weighted average of 77 and very high recall and precision in long and short. While the numbers seem good the performance of this strategy is not desirable as it underperforms.
+
 ![Decorative image.](Images/image3.png)
  
 In step 6 we create a predictions DataFrame that contains columns for “Predicted” values, “Actual Returns”, and “Strategy Returns”. 
@@ -133,15 +136,9 @@ Step 7 we create a cumulative return plot that shows the actual returns vs. the 
 
 ![Decorative image.](Images/plot1.png) 
 
-I set out to tune the model to find some better performance. 
+I attempted to fine tune the model in order to obtain an increase in performance. We ajusted the time period from three months to six. This was coupled with adjusting the moving averages used as trading signals. When using a shorter SMA horizon of 14 days for our "Fast" SMA and 30 days as our "Slow" SMA. These changes together produced this classification report which was worse than the original classification report with a 20 points drop on weighted average and much worse recall and precision rate. Despite this the returns were much better and outperformed. As this new model outperformed on nearly all times frames, I believe that changing the moving averages had a greater effect than increasing the time period that we looked at originally
 
-One of the things I did was to increase the time horizon that was used for testing, from 3 months to 6 months. 
-
-This was coupled with adjusting the moving averages used as trading signals. We decided on using a shorter SMA horizon with 14 days being our "Fast" SMA and 30 being our "Slow" SMA 
-
-These changes together produced this classification report which on the surface looks worse than the original classification report with a whole 20 points lower on weighted average and much worse recall and precision. 
-
- 
+![Decorative image.](Images/plot2.png)
 
 The next section we tune the baseline trading algorithm we’ll tune, or adjust, the model’s input features to find the parameters that result in the best trading outcomes. We’ll choose the best by comparing the cumulative products of the strategy returns. 
 
