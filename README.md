@@ -114,7 +114,7 @@ Step 2: Generate trading signals using short- and long-window SMA values.
 
 Step 3: Split the data into training and testing datasets. 
 
-![Decorative image.](Images/image 1.png)
+![Decorative image.](Images/image1.png)
 <insert image 1> 
 
 The first time frame looked at was 3 months. 
