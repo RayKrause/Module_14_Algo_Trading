@@ -122,19 +122,19 @@ The initial time frame looked at a 3 month period.
 
 In step 4 we used the `SVC` classifier model from SKLearn's support vector machine (SVM) learning method to fit the training data and make predictions based on the testing data.
 
-![Decorative image.](Images/image2.png)
+![Decorative image.](Images/image2a.png)
 
 In step 5 we review the classification report associated with the `SVC` model predictions. The original classification report shows that the model should be useful with a weighted average of 77 and very high recall and precision in long and short. While the numbers seem good the performance of this strategy is not desirable as it underperforms.
 
-![Decorative image.](Images/image3.png)
+![Decorative image.](Images/image3a.png)
  
 In step 6 we create a predictions DataFrame that contains columns for “Predicted” values, “Actual Returns”, and “Strategy Returns”. 
 
-![Decorative image.](Images/image4.png)
+![Decorative image.](Images/image4a.png)
 
 Step 7 we create a cumulative return plot that shows the actual returns vs. the strategy returns. Save a PNG image of this plot. This will serve as a baseline against which to compare the effects of tuning the trading algorithm. 
 
-![Decorative image.](Images/plot1.png) 
+![Decorative image.](Images/plot1a.png) 
 
 In an attempt to fine tune the model in order to obtain an increase in performance. I adjusted the time period from three months to six. 
 
