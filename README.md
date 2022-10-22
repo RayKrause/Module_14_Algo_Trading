@@ -124,7 +124,7 @@ In step 4 we used the `SVC` classifier model from SKLearn's support vector machi
 
 ![Decorative image.](Images/image2a.png)
 
-In step 5 we review the classification report associated with the `SVC` model predictions. The original classification report shows that the model should be useful with a weighted average of 77 and very high recall and precision in long and short. While the numbers seem good the performance of this strategy is not desirable as it underperforms.
+In step 5 we review the classification report associated with the `SVC` model predictions. The original classification report shows that the model should be useful with a weighted average of 71 and high recall and precision in long and short. While the numbers seem good the performance of this strategy is not desirable as it underperforms.
 
 ![Decorative image.](Images/image3a.png)
  
@@ -140,7 +140,7 @@ In an attempt to fine tune the model in order to obtain an increase in performan
 
 ![Decorative image.](Images/6month.png)
 
-This in conjuction with adjusting the moving averages used as trading signals. When using a shorter SMA horizon of 14 days for our "Fast" SMA and 30 days as our "Slow" SMA. These changes together produced a classification report which was worse than the original classification report with a significant points drop on weighted average and much worse recall and precision rate. Despite that the returns appeared to be much better and outperformed the previous model on nearly all of the times frames, I think that changing the moving averages had a greater effect on the model than merely increasing the time period that we originally looked at.
+This in conjuction with adjusting the moving averages used as trading signals. When using a shorter SMA horizon of 14 days for our "Fast" SMA and 30 days as our "Slow" SMA. These changes together produced a classification report which were simular to the original classification report.I think that changing the moving averages had a greater effect on the model than merely increasing the time period that we originally looked at.
 
 ![Decorative image.](Images/6month1a.png)
 ![Decorative image.](Images/6month_plot_a.png)
