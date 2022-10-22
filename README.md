@@ -159,10 +159,6 @@ While the classification report showed a lower weighted average than the previou
 
 ![Decorative image.](Images/image6.png)
 
-But this model is not good as it lags in actual returns to such an extent that I'm of the opinion that logistic regression may not be suitable for use in trading algorithms
-
-![Decorative image.](Images/plot2.png)
-
 ### Conclusion
 The updated model appears to work well and should be fitted to other assets to see what sort of performance gains could be attained.
 It appears that Support Vector Machine learning is suitable for building a algorithmic trading bot to assist in a trading strategy.
