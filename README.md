@@ -142,8 +142,8 @@ In an attempt to fine tune the model in order to obtain an increase in performan
 
 This in conjuction with adjusting the moving averages used as trading signals. When using a shorter SMA horizon of 14 days for our "Fast" SMA and 30 days as our "Slow" SMA. These changes together produced a classification report which was worse than the original classification report with a significant points drop on weighted average and much worse recall and precision rate. Despite that the returns appeared to be much better and outperformed the previous model on nearly all of the times frames, I think that changing the moving averages had a greater effect on the model than merely increasing the time period that we originally looked at.
 
-![Decorative image.](Images/6month1.png)
-![Decorative image.](Images/6month_plot.png)
+![Decorative image.](Images/6month1a.png)
+![Decorative image.](Images/6month_plot_a.png)
 
 The next section we tune the baseline trading algorithm we’ll tune, or adjust, the model’s input features to find the parameters that result in the best trading outcomes. We’ll choose the best by comparing the cumulative products of the strategy returns. 
 
